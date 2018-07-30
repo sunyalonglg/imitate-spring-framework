@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 处理返回结果的工具类
+ * 分装所有的sql执行后的结果的工具类,也就是requestSet工具类.
  *
  * @author sunyalong
  * @version 1.0, 2018-7-25 17:05:33

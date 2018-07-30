@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 import java.sql.Connection;
 
 /**
- * service代理类的产生
+ * 获得一个service代理类.
  *
  * @author sunyalong
  * @version 1.0, 2018-7-25 22:10:34
@@ -34,6 +34,17 @@ public class InitService {
         return proxy;
     }
 
+    /**
+     * 执行service目标方法.
+     *
+     * @param obj
+     * @param method
+     * @param args
+     * @param proxy
+     * @param isJdkProxy
+     * @return
+     * @throws Throwable
+     */
     public Object toStartTransactional(Object obj, Method method, Object[] args, MethodProxy proxy,boolean isJdkProxy) throws Throwable {
         boolean transactionalFlag = false;
         // 判断类上的注解

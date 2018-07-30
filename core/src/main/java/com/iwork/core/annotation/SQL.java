@@ -3,7 +3,7 @@ package com.iwork.core.annotation;
 import java.lang.annotation.*;
 
 /**
- * 请求url的注解
+ * 使用在自定义的dao接口上表示,这个方法所执行的sql语句.
  *
  * @version 1.0, 2018-7-18 16:56:22
  * @author sunyalong

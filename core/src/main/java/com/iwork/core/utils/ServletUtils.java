@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * servlet的基本工具类
+ * servlet的基本工具类,也就是关于request,和response的工具类
  *
  * @author sunyalong
  * @version 1.0, 2018-7-23 21:03:21

@@ -9,8 +9,9 @@ package com.iwork.core.cons;
 public class SysCons {
 
     /** 转发的返回前缀 */
-    public static String FORWARD = "forward:";
+    public static final String FORWARD = "forward:";
 
     /** 重定向的返回前缀 */
-    public static String REDIRECT = "redirect:";
+    public static final String REDIRECT = "redirect:";
+
 }

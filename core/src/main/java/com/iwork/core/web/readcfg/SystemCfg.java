@@ -4,7 +4,10 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- * 读取类路径下面的appplication的 所有配置信息
+ * 读取类路径下面的appplication.properties文件
+ *
+ * @author sunyalong
+ * @version 1.0, 2018-7-30 11:30:57
  */
 public class SystemCfg {
 
@@ -17,7 +20,6 @@ public class SystemCfg {
     static{
         try {
             Properties pro = new Properties();
-//            InputStream reader = new FileInputStream("src/application.properties");
             InputStream reader = SystemCfg.class.getClassLoader().getResourceAsStream("application.properties");
             pro.load(reader);
             cfg = pro;

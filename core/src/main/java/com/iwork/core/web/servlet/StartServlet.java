@@ -16,6 +16,12 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 框架的主入口类,类似于spring的DispatchServlet.
+ *
+ * @author sunyalong
+ * @version 1.0, 2018-7-30 11:31:36
+ */
 public class StartServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 

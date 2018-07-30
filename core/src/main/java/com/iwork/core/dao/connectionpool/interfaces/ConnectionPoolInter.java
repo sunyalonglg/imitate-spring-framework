@@ -3,6 +3,12 @@ package com.iwork.core.dao.connectionpool.interfaces;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+/**
+ * 只定义的一个连接池接口
+ *
+ * @author sunyalong
+ * @version 1.0, 2018-7-30 11:08:58
+ */
 public interface ConnectionPoolInter {
 
     /**

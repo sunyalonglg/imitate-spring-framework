@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
 public class ArrayUtils {
 
     /**
-     * 拷贝数组
+     * 将两个数组合并成一个数组
      *
      * @param arr1
      * @param arr2

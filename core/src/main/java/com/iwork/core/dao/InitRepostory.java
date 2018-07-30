@@ -3,7 +3,7 @@ package com.iwork.core.dao;
 import java.lang.reflect.Proxy;
 
 /**
- * 初始化所有的dao接口
+ * 初始化一个dao接口,也就是为dao接口产生一个代理类对象
  *
  * @author sunyalong
  * @version 1.0, 2018-7-23 22:27:59

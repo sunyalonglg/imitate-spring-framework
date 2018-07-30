@@ -13,7 +13,7 @@ import java.util.TimerTask;
 import java.util.Vector;
 
 /**
- * 连接池
+ * 自定义的一个连接池
  *
  * @author sunyalong
  * @version 1.0, 2018-7-23 22:07:46

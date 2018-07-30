@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * 每一次請求的上下文對象
+ * 每一次請求的上下文对象
  *
  * @author sunyalong
  * @version 1.0, 2018-7-20 23:28:33
@@ -21,14 +21,29 @@ public class RequestContext {
         this.response = response;
     }
 
+    /**
+     * 获得本次请求的request
+     *
+     * @return
+     */
     public HttpServletRequest getRequest() {
         return request;
     }
 
+    /**
+     * 获得本次请求的Response
+     *
+     * @return
+     */
     public HttpServletResponse getResponse() {
         return response;
     }
 
+    /**
+     * 获得本次请求的Session
+     *
+     * @return
+     */
     public HttpSession getSession(){
         return request.getSession();
     }

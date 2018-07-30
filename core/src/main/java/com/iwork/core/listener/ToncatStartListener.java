@@ -11,6 +11,12 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import java.util.Set;
 
+/**
+ * Tomcat容器启动监听的Listener,系统的初始化,和创建所有的dao,service代理类,以及注入必要的属性,都是从容器启动开始的.
+ *
+ * @author sunyalong
+ * @version 1.0, 2018-7-30 11:16:02
+ */
 public class ToncatStartListener implements ServletContextListener {
 
     public void contextInitialized(ServletContextEvent sce) {

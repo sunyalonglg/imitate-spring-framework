@@ -3,12 +3,13 @@ package com.iwork.core.dao.connectionpool;
 import com.iwork.core.web.readcfg.SystemCfg;
 
 /**
- * jdbc链接的基本常用属性bean
+ * jdbc链接初始化连接池的属性bean
  *
  * @author sunyalong
  * @version 1.0, 2018-7-23 21:53:38
  */
 public class DBbean {
+
     private String driverName = null;    //JDBC驱动
     private String url = null; //JDBC地址
     private String userName = null;   //数据库用户名

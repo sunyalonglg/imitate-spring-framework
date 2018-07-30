@@ -3,7 +3,7 @@ package com.iwork.core.annotation;
 import java.lang.annotation.*;
 
 /**
- * 请求url的注解
+ * 和Spring一样表示,请求url的注解
  *
  * @version 1.0, 2018-7-18 16:56:22
  * @author sunyalong
@@ -13,5 +13,6 @@ import java.lang.annotation.*;
 @Documented
 public @interface RequestMapping {
 
+    /** 请求路径 */
     public String value() default "";
 }

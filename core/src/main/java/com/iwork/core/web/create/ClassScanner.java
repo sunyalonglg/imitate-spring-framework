@@ -12,7 +12,7 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
 /**
- * 通過基礎包名,查找所有的class文件
+ * 扫描包的一个类,也就是给一个基础包,扫描子包下的class路径
  *
  * @author sunyalong
  * @version 1.0, 2018-7-18 17:02:02
@@ -21,6 +21,7 @@ public class ClassScanner {
 
     /**
      * 获取某包下所有类
+     *
      * @param packageName 包名
      * @param isRecursion 是否遍历子包
      * @return 类的完整名称
@@ -57,6 +58,7 @@ public class ClassScanner {
 
     /**
      * 从项目文件获取某包下所有类
+     *
      * @param filePath 文件路径
      * @param packageName 类名集合
      * @param isRecursion 是否遍历子包
@@ -116,6 +118,7 @@ public class ClassScanner {
 
     /**
      * 从所有jar中搜索该包，并获取该包下所有类
+     *
      * @param urls URL集合
      * @param packageName 包路径
      * @param isRecursion 是否遍历子包

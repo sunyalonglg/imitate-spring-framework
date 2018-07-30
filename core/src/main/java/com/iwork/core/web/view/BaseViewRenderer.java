@@ -14,12 +14,13 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /**
- * 基礎視圖渲染器
+ * jsp基础的视图渲染解析器
  *
  * @author sunyalong
  * @version 1.0, 2018-7-20 23:38:09
  */
 public class BaseViewRenderer {
+
     /**
      * 渲染视图
      *

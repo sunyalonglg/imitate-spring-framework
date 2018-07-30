@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.*;
 
 /**
- * 基本绑定参数器
+ * 执行Controller,的方法,以及参数的绑定.
  *
  * @author sunyalong
  * @version 1.0, 2018-7-20 23:38:09

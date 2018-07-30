@@ -5,9 +5,13 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.Map;
 
+/**
+ * 反射基本工具类
+ *
+ * @author sunyalong
+ * @version 1.0, 2018-7-30 11:20:05
+ */
 public class ReflectUtils {
-
-
 
     /**
      * 吧一个map集合装到po对象

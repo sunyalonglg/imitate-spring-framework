@@ -101,7 +101,7 @@ public class CreateClass {
     }
 
     /**
-     * 添加到应用程序的容器
+     * 添加到Controller容器中
      *
      * @param clazz
      * @param con
@@ -121,9 +121,9 @@ public class CreateClass {
     }
 
     /**
-     * 通过请求参数查询到，需要 执行的类和Method
+     * 通过请求的url,查询需要执行的Controller,的Action
      *
-     * @param url
+     * @param url 请求路径
      * @return
      */
     public static Map<Class, Method> findAction(String url){

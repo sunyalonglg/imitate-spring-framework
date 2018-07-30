@@ -3,7 +3,7 @@ package com.iwork.core.dao.interfaces;
 import java.util.List;
 
 /**
- * base dao所有的dao都继承这个
+ * baseDao所有的dao都继承这个,dao接口继承这个类后就会有下面两个方法不需要写,自动生成
  *
  * @param <E> 需要查询的po类
  * @param <T> 这个类的主建类型

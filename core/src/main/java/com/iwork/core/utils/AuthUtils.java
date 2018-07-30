@@ -83,6 +83,8 @@ public class AuthUtils {
     }
 
     /**
+     * autowwired这个注解的自动注入.
+     *
      * @param field
      * @param obj
      * @return
