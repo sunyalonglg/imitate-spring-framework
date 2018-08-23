@@ -25,14 +25,14 @@ public class ServletUtils {
      * @param response
      * @return
      */
-    public static String getRequestJson(HttpServletRequest request, HttpServletResponse response) {
+    public static String getParamJson(HttpServletRequest request, HttpServletResponse response) {
         String contentType = request.getContentType();
         String json;
         if (contentType != null && contentType.equals("application/json")) {
             json = ServletUtils.readJson(request, response);
         } else {
             Map<String, Object> parameterMap = request.getParameterMap();
-            json = JSONObject.toJSONString(parameterMap).replace("[", "").replace("[", "");
+            json = JSONObject.toJSONString(parameterMap).replace("[", "").replace("]", "");
         }
         return json;
     }

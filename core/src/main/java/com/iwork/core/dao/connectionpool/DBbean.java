@@ -38,6 +38,7 @@ public class DBbean {
             db.setUrl(SystemCfg.getKey("db-url"));
             db.setUserName(SystemCfg.getKey("db-username"));
             db.setPassword(SystemCfg.getKey("db-password"));
+            db.setInitConnection(Integer.parseInt(SystemCfg.getKey("db-init-connection")));
         }
         return db;
     }

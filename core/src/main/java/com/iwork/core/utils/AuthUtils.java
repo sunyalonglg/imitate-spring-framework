@@ -18,8 +18,8 @@ import java.util.Map;
  */
 public class AuthUtils {
 
-    /**
-     * 为service注入属性
+    /**为service注入属性
+     *
      */
     public static void authAllService() throws IllegalAccessException {
         for (Map<String, Object> service : CreateClass.serviceApplicationBean) {
@@ -40,7 +40,7 @@ public class AuthUtils {
      * @throws IllegalAccessException
      */
     public static void fieldAuthLoad(Object serviceObj, Class clazz, List<Map<String, Object>> applicationBean) throws IllegalAccessException {
-        // 获得直接饮用的对象属性
+        // 获得直接引用的对象属性
         Field[] declaredFields = clazz.getDeclaredFields();
         // 获得父类引用的属性
         Class superclass = clazz.getSuperclass();

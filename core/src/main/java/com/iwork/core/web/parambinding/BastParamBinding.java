@@ -53,7 +53,7 @@ public class BastParamBinding {
                 String contentType = request.getContentType();
 
                 // 读取请求参数
-                String json = ServletUtils.getRequestJson(request, response);
+                String json = ServletUtils.getParamJson(request, response);
                 // 判断是不是map集合
                 Object modelObj = JSON.parseObject(json, modelClass);
                 model.setModel(modelObj);
@@ -68,7 +68,7 @@ public class BastParamBinding {
             // 设置model的值
             Class beanClazz = ReflectUtils.getClassGeneric(obj.getClass(),0);
             // 读取请求参数
-            String json = ServletUtils.getRequestJson(request, response);
+            String json = ServletUtils.getParamJson(request, response);
             Object modelObj = JSON.parseObject(json, beanClazz);
             ReflectUtils.setFiledValue(ModelActionSupport.class,"model",obj,modelObj);
         }
